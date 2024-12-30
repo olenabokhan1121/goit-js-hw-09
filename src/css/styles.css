@@ -15,4 +15,128 @@
 @import url('./vite-promo.css');
 @import url('./badges.css');
 @import url('./back-link.css');
-@import url('./footer.css');
+
+/*Task 1-styles*/
+
+@import 'simplelightbox/dist/simple-lightbox.min.css';
+.container-list {
+  background: #fff;
+
+  max-width: 1440px;
+  padding: 24px 156px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+.gallery-item {
+  width: calc((100% - 48px) / 3);
+}
+
+.gallery-image {
+  width: 100%;
+  height: 200px;
+  display: block;
+}
+
+/* Task-2-styles*/
+
+.feedback-form {
+  padding: 24px;
+}
+
+.login-form-label {
+  display: block;
+  text-align: left;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+.review-form-input {
+  display: block;
+  position: relative;
+  width: 360px;
+  height: 40px;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  color: #000;
+  border-radius: 4px;
+  outline: transparent;
+  background-color: transparent;
+  padding-left: 38px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.review-form-textarea {
+  display: block;
+  position: relative;
+  width: 360px;
+  height: 80px;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  color: #000;
+  border-radius: 4px;
+  outline: transparent;
+  background-color: transparent;
+  padding-left: 38px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.review-form-textarea:hover {
+  outline: none;
+  border-color: #000;
+}
+.review-form-input:hover {
+  outline: none;
+  border-color: #000;
+}
+.review-form-input::after {
+  content: 'Type area';
+  position: absolute;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  pointer-events: none;
+  opacity: 0;
+  top: 8px;
+  left: 16px;
+}
+.review-form-input:focus ~ ::after {
+  opacity: 1;
+}
+.review-form-submit-btn {
+  border-radius: 8px;
+  width: 86px;
+  height: 40px;
+  display: block;
+  margin-top: 16px;
+  background: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.review-form-submit-btn:hover,
+.review-form-submit-btn:focus {
+  background: #6c8cff;
+}
